@@ -32,7 +32,7 @@
   a {
     background-color: var(--primary);
     color: var(--background);
-    padding: 1rem 2.75rem;
+    padding: .7rem 2.75rem;
     border-radius: .5rem;
     font-family: var(--font-work-sans);
     font-weight: 600;
@@ -123,6 +123,19 @@
   p {
     font-weight: 700;
   }
+
+  p:last-of-type {
+    margin-top: 7rem;
+    font-size: 1.1rem;
+
+    a {
+      color: var(--primary);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .downloads ul {
@@ -170,7 +183,7 @@
   }
 }
 
-@media (width> 47.8125rem) {
+@media (width>47.8125rem) {
 
   .hero {
     flex-direction: row;
@@ -178,6 +191,39 @@
     padding: 3.75rem 8%;
     gap: 2rem;
   }
+
+  .hero__img {
+    width: 40%;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  .hero__content {
+    width: 60%;
+  }
+
+  .downloads ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .streaming ul {
+    grid-template-columns: repeat(2, 1fr);
+
+    li:last-child {
+      grid-column: span 2;
+    }
+  }
+
+  .about {
+    padding-inline: 6rem;
+  }
+}
+
+
+@media (width>64rem) {
 
   .hero__img {
     width: 27.1875rem;
@@ -216,20 +262,8 @@
     padding: 6.25rem 13.0625rem;
   }
 
-  .streaming ul {
-    grid-template-columns: repeat(2, 1fr);
-
-    li:last-child {
-      grid-column: span 2;
-    }
-  }
-
   .downloads {
     padding: 8.375rem 120px;
-  }
-
-  .downloads ul {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .main-footer {

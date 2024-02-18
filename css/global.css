@@ -129,7 +129,8 @@ a {
   top: 0;
   right: 0;
   bottom: 0;
-  width: 20rem;
+  width: 60%;
+  max-width: 20rem;
   z-index: 10000;
   background-color: var(--background);
   padding: 2rem;
@@ -247,7 +248,7 @@ a {
 .menu-second li {
   display: flex;
   align-items: center;
-  gap: 0.3rem;
+  gap: 0.5rem;
 }
 
 .menu-second img {
@@ -338,6 +339,7 @@ a {
     background-color: initial;
     width: 70%;
     animation: none;
+    max-width: none;
   }
 
   .main-nav.hidden {
