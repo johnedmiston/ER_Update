@@ -6,44 +6,124 @@
   <title>Eternity Radio | Contact Us</title>
   <link rel="stylesheet" href="../css/contact.css">
   <link rel="stylesheet" href="../css/global.css">
+  <script src="../js/contact.js" defer></script>
+  <script src="../js/index.js" defer></script>
 </head>
 <body>
-  <header class="main-header">
-    <!-- logo -->
-    <a href="#" class="main-header__logo">
-      <img src="./assets/images/cybermissionsfull_400.jpg" alt="logo" />
-    </a>
+  <header>
+    <div class="top-banner">
+      <p>Using computers and internet to facilitate the great commission</p>
+    </div>
+    <div class="main-header">
+      <!-- logo -->
+      <a href="../index.html" class="main-header__logo">
+        <img src="../assets/images/cybermissionsfull_400.jpg" alt="logo" />
+      </a>
 
-    <button aria-haspopup="true" aria-expanded="false" aria-controls="navigation-menu" id="open-menu"
-      class="main-header__open-menu">
-      <img src="./assets/images/bars.svg" alt="open navigation menu" />
-    </button>
-    <nav class="main-nav hidden" id="navigation-menu">
-      <ul>
-        <li class="close-menu">
-          <button role="menuitem" aria-expanded="false" aria-haspopup="false" id="close-menu"
-            class="main-header__close-menu" aria-label="close navigation menu">
-            <img src="./assets/images/close.svg" alt="close navigation menu">
+      <button aria-haspopup="true" aria-expanded="false" aria-controls="navigation-menu" id="open-menu"
+        class="main-header__open-menu">
+        <img src="../assets/images/bars.svg" alt="open navigation menu" />
+      </button>
+      <nav class="main-nav hidden" id="navigation-menu">
+        <ul>
+          <li class="close-menu">
+            <button role="menuitem" aria-expanded="false" aria-haspopup="false" id="close-menu"
+              class="main-header__close-menu" aria-label="close navigation menu">
+              <img src="../assets/images/close.svg" alt="close navigation menu">
 
-          </button>
-        </li>
-        <li>
-          <a href="#">home</a>
-        </li>
-        <li>
-          <a href="#">stream</a>
-        </li>
-        <li>
-          <a href="#">download</a>
-        </li>
-        <li>
-          <a href="#">contact</a>
-        </li>
-        <li>
-          <a href="#">donate</a>
-        </li>
-      </ul>
-    </nav>
+            </button>
+          </li>
+          <li>
+            <a href="../index.html">home</a>
+          </li>
+          <li>
+            <a href="#">stream</a>
+          </li>
+          <li>
+            <a href="#">download</a>
+          </li>
+          <li>
+            <a href="#">contact</a>
+          </li>
+          <li>
+            <a href="#">donate</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
+
+  <main class="">
+    <div aria-label="hero section" class="hero">
+      <h1>contact us</h1>
+    </div>
+
+    <section class="form-info">
+      <h2>We&#39;ll love to hear from you, please get in touch</h2>
+
+      <form id="contact-form" method="post" name="contact-form" enctype="text/plain" class="contact-form">
+        <input type="text" name="first-name" id="first-name" placeholder="first name" />
+        <input type="text" name="last-name" id="last-name" placeholder="last name" />
+        <input type="email" name="email" id="email" placeholder="email address" required aria-required="true" />
+        <input type="text" name="phone" id="phone" placeholder="phone number" />
+        <textarea name="message" id="message" placeholder="message" cols="30" rows="5" required
+          aria-required="true"></textarea>
+        <button type="submit" id="submit">submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer__logo"><img src="../assets/images/logo-yellow.jpg" alt="logo" />
+      <a href="https://play.google.com/store/apps/details?id=com.cybermissions.eternityradioapp">get the app</a>
+    </div>
+    <div class="menu-first">
+      <h5>menu</h5>
+      <ul>
+        <li><a href="#">about</a></li>
+        <li><a href="#">our mission</a></li>
+        <li><a href="#">voluteer</a></li>
+        <li><a href="#">support</a></li>
+        <li><a href="#">donate</a></li>
+      </ul>
+    </div>
+    <div class="menu-second">
+      <h5>contact us</h5>
+      <ul>
+        <li><img src="../assets/images/location.svg" alt="">P.O. Box 40 Rhoadesville, VA, 22542 (USA)</li>
+        <li><img src="../assets/images/mail.svg" alt="">johned@cybermissions.org</li>
+        <li><img src="../assets/images/phone.svg" alt="">+1-310-844-6948</li>
+      </ul>
+    </div>
+
+
+    <div class="footer__subscribe">
+      <h5>Subscribe to our Newsletter</h5>
+      <form action="post" id="subscribe">
+        <input type="email" name="subscribe-email" id="subscribe-email" placeholder="enter email address" />
+        <button type="submit">subscribe</button>
+      </form>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__bottom-socials">
+        <a href="#" title="twitter">
+          <img src="../assets/images/twitter.svg" alt="" title="instagram">
+        </a>
+        <a href="#" title="instagram">
+          <img src="../assets/images/instagram.svg" alt="">
+        </a>
+        <a href="#" title="linkedin">
+          <img src="../assets/images/linkedin.svg" alt="">
+        </a>
+        <a href="mailto:johned@cybermissions.org" title="send email">
+          <img src="../assets/images/email.svg" alt="">
+        </a>
+      </div>
+      <div class="footer__bottom-donate">
+        <a href="#" id="donate">donate</butto>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
