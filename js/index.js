@@ -1,8 +1,10 @@
 'use strict';
 
 const openMenuBtn = document.querySelector('#open-menu');
-const closeMenuBtn = document.querySelector('#close-menu');
 const navigationMenuElement = document.querySelector('#navigation-menu');
+const closeImg = document.querySelector('.close-menu-img');
+const menuImg = document.querySelector('.open-menu-img');
+const overlay = document.querySelector('.overlay');
 
 /**
  * toggleMobileMenu.
@@ -13,8 +15,11 @@ const navigationMenuElement = document.querySelector('#navigation-menu');
  */
 function toggleMobileMenu() {
   navigationMenuElement.classList.toggle('hidden');
+  closeImg.classList.toggle('hide');
+  menuImg.classList.toggle('hide');
+  overlay.classList.toggle('hide');
 }
 
 openMenuBtn.addEventListener('click', toggleMobileMenu);
 
-closeMenuBtn.addEventListener('click', toggleMobileMenu);
+overlay.addEventListener('click', toggleMobileMenu);

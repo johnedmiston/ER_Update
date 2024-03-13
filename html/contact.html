@@ -10,47 +10,38 @@
   <script src="../js/index.js" defer></script>
 </head>
 <body>
-  <header>
-    <div class="top-banner">
-      <p>Using computers and internet to facilitate the great commission</p>
-    </div>
-    <div class="main-header">
-      <!-- logo -->
-      <a href="../index.html" class="main-header__logo">
-        <img src="../assets/images/cybermissionsfull_400.jpg" alt="logo" />
-      </a>
+  <header class="main-header">
+    <!-- logo -->
+    <a href="#" class="main-header__logo">
+      <img src="./assets/images/cybermissionsfull_400.jpg" alt="logo" />
+    </a>
 
-      <button aria-haspopup="true" aria-expanded="false" aria-controls="navigation-menu" id="open-menu"
-        class="main-header__open-menu">
-        <img src="../assets/images/bars.svg" alt="open navigation menu" />
-      </button>
-      <nav class="main-nav hidden" id="navigation-menu">
-        <ul>
-          <li class="close-menu">
-            <button role="menuitem" aria-expanded="false" aria-haspopup="false" id="close-menu"
-              class="main-header__close-menu" aria-label="close navigation menu">
-              <img src="../assets/images/close.svg" alt="close navigation menu">
+    <button aria-haspopup="true" aria-expanded="false" aria-controls="navigation-menu" id="open-menu"
+      class="main-header__open-menu">
+      <img src="./assets/images/bars.svg" alt="open navigation menu" class="open-menu-img" />
 
-            </button>
-          </li>
-          <li>
-            <a href="../index.html">home</a>
-          </li>
-          <li>
-            <a href="#">stream</a>
-          </li>
-          <li>
-            <a href="#">download</a>
-          </li>
-          <li>
-            <a href="#">contact</a>
-          </li>
-          <li>
-            <a href="./donate.html">donate</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+      <img src="./assets/images/close.svg" alt="close navigation menu" class="close-menu-img hide">
+    </button>
+    <div class="overlay hide"></div>
+    <nav class="main-nav hidden" id="navigation-menu">
+      <ul>
+        <li>
+          <a href="#">home</a>
+        </li>
+        <li>
+          <a href="#">stream</a>
+        </li>
+        <li>
+          <a href="#">download</a>
+        </li>
+        <li>
+          <a href="./html/contact.html">contact</a>
+        </li>
+        <li>
+          <a href="./html/donate.html">donate</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <main class="">
@@ -74,29 +65,32 @@
   </main>
 
   <footer class="main__footer">
-    <div class="footer__logo"><img src="../assets/images/logo-yellow.jpg" alt="logo" />
+    <div class="footer__logo">
+      <img src="../assets/images/logo-yellow.jpg" alt="logo" class="logo" />
       <a href="https://play.google.com/store/apps/details?id=com.cybermissions.eternityradioapp" class="app-download">
-        <img src="../assets/images/google-play.svg" alt="">Get the App</a>
-    </div>
-    <div class="menu-first">
-      <h5>menu</h5>
-      <ul>
-        <li><a href="#">about</a></li>
-        <li><a href="#">our mission</a></li>
-        <li><a href="#">voluteer</a></li>
-        <li><a href="#">support</a></li>
-        <li><a href="#">donate</a></li>
-      </ul>
-    </div>
-    <div class="menu-second">
-      <h5>contact us</h5>
-      <ul>
-        <li><img src="../assets/images/location.svg" alt="">P.O. Box 40 Rhoadesville, VA, 22542 (USA)</li>
-        <li><img src="../assets/images/mail.svg" alt="">johned@cybermissions.org</li>
-        <li><img src="../assets/images/phone.svg" alt="">+1-310-844-6948</li>
-      </ul>
+        <img src="../assets/images/google-play-badge.png" alt=""></a>
     </div>
 
+    <div class="info-wrap">
+      <div class="menu-first">
+        <h5>menu</h5>
+        <ul>
+          <li><a href="#">about</a></li>
+          <li><a href="#">our mission</a></li>
+          <li><a href="#">voluteer</a></li>
+          <li><a href="#">support</a></li>
+          <li><a href="./donate.html">donate</a></li>
+        </ul>
+      </div>
+      <div class="menu-second">
+        <h5>contact us</h5>
+        <ul>
+          <li><img src="../assets/images/location.svg" alt="">P.O. Box 40 Rhoadesville, VA, 22542 (USA)</li>
+          <li><img src="../assets/images/mail.svg" alt="">johned@cybermissions.org</li>
+          <li><img src="../assets/images/phone.svg" alt="">+1-310-844-6948</li>
+        </ul>
+      </div>
+    </div>
 
     <div class="footer__subscribe">
       <h5>Subscribe to our Newsletter</h5>
@@ -122,7 +116,7 @@
         </a>
       </div>
       <div class="footer__bottom-donate">
-        <a href="./donate.html" id="donate">donate</a>
+        <a href="#" id="donate">donate</a>
       </div>
     </div>
   </footer>
