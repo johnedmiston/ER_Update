@@ -391,7 +391,13 @@ a:hover {
   }
 }
 
-@media (width>47.8125rem) {
+@media (width>=37.5rem) {
+  .audio__card {
+    width: 80%;
+  }
+}
+
+@media (width>=47.8125rem) {
   .main-header {
     padding: 0.25rem 8%;
   }
@@ -420,6 +426,10 @@ a:hover {
 
   .info-wrap {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .audio__card {
+    width: 100%;
   }
 }
 
@@ -507,7 +517,9 @@ a:hover {
   p {
     font-size: 1.1rem;
   }
+}
 
+@media (width>=75rem) {
   .audio__group ul,
   .audio__list {
     grid-template-columns: repeat(3, 1fr);

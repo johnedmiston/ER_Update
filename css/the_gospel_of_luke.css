@@ -1,0 +1,58 @@
+.hero__section {
+  text-align: center;
+  padding: 4rem 1rem;
+
+  h1 {
+    text-transform: uppercase;
+    color: #00356f;
+    margin-bottom: 3rem;
+  }
+}
+
+.programs {
+  background-color: var(--off-white);
+  padding: 3rem 1.5rem;
+
+  h2 {
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--accent);
+    font-size: 2rem;
+  }
+}
+
+.audio__card {
+  background-color: #fff;
+  border-radius: 2rem 5rem 2rem 5.7rem;
+  padding: 4.5rem 2rem;
+
+  &:hover {
+    background-color: var(--accent);
+    color: #fff;
+  }
+}
+
+@media (width>= 47.8125rem) {
+  .hero__section {
+    padding-inline: 5rem;
+  }
+
+  .programs {
+    padding-inline: 6rem;
+  }
+}
+
+@media (width >=64rem) {
+  .hero__section {
+    padding-inline: 10rem;
+
+    h1 {
+      font-size: 2.3rem;
+      line-height: 1.7;
+    }
+  }
+
+  .programs {
+    padding-inline: 7rem;
+  }
+}
