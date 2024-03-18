@@ -1,0 +1,19 @@
+.hero__section {
+  background-color: rgba(236, 227, 174, 0.5);
+  min-height: 80svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+  gap: 3rem;
+  margin-bottom: 4rem;
+
+  h1 {
+    text-transform: uppercase;
+    color: #00356f;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.7;
+  }
+}
