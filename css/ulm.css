@@ -1,0 +1,39 @@
+.hero__section {
+  padding: 4rem 1rem;
+  text-align: center;
+
+  h1 {
+    text-transform: uppercase;
+    color: #00356f;
+  }
+}
+
+.about {
+  background-color: blanchedalmond;
+  padding: 6rem 1rem;
+  text-align: center;
+
+  p {
+    font-size: 1.09rem;
+    line-height: 1.6;
+  }
+}
+
+.programs {
+  margin-block: 3rem;
+
+  h2 {
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+@media (width>= 47.8125rem) {
+}
+
+@media (width >=64rem) {
+}

@@ -1,24 +1,23 @@
 @font-face {
-  font-family: 'Verdana Regular';
+  font-family: "Verdana Regular";
   src: url(../assets/verdana-font-family/verdana.ttf);
 }
 
 @font-face {
-  font-family: 'Verdana Bold';
+  font-family: "Verdana Bold";
   src: url(../assets/verdana-font-family/verdana-bold.ttf);
 }
 
 :root {
-  --font-work-sans: 'Work Sans',
-    sans-serif;
-  --background: #FFFFFF;
+  --font-work-sans: "Work Sans", sans-serif;
+  --background: #ffffff;
   --foreground: #202020;
-  --primary: #0071BC;
-  --secondary: #ECE3AE;
-  --accent: #8652E1;
-  --light-blue: #4D90FE;
-  --blue: #357AE8;
-  --off-white: #F0F0F0;
+  --primary: #0071bc;
+  --secondary: #ece3ae;
+  --accent: #8652e1;
+  --light-blue: #4d90fe;
+  --blue: #357ae8;
+  --off-white: #f0f0f0;
 
   font-size: 1rem;
 }
@@ -41,22 +40,22 @@ button:focus-visible {
 }
 
 body {
-  font-family: 'Verdana Regular', sans-serif;
+  font-family: "Verdana Regular", sans-serif;
   background-color: var(--background);
   color: var(--foreground);
   font-weight: 400;
   line-height: 1.5;
-  letter-spacing: .0313rem;
+  letter-spacing: 0.0313rem;
 }
 
 a {
   color: inherit;
-  transition: all .2ms linear;
+  transition: all 0.2ms linear;
 }
 
 button {
   cursor: pointer;
-  transition: all .5ms linear;
+  transition: all 0.5ms linear;
 }
 
 audio {
@@ -66,15 +65,14 @@ audio {
 }
 
 audio::-webkit-media-controls-panel {
-  background-color: #C0BCBC;
+  background-color: #c0bcbc;
   border-radius: 2.5rem;
-  padding: .5rem 0.6rem;
+  padding: 0.5rem 0.6rem;
 }
 
 button:hover {
   scale: 1.06;
-  opacity: 0.90;
-
+  opacity: 0.9;
 }
 
 a:hover {
@@ -84,7 +82,6 @@ a:hover {
 .hide {
   display: none;
 }
-
 
 /* HEADER SECTION */
 
@@ -131,8 +128,6 @@ a:hover {
     width: 2.3rem;
     object-fit: contain;
   }
-
-
 }
 
 .main-header__open-menu:focus {
@@ -151,7 +146,7 @@ a:hover {
   font-family: var(--font-work-sans);
   text-transform: capitalize;
   line-height: 1.5rem;
-  letter-spacing: .0313rem;
+  letter-spacing: 0.0313rem;
   font-weight: 600;
   text-transform: uppercase;
   position: fixed;
@@ -184,23 +179,62 @@ a:hover {
   background-color: var(--primary);
   padding: 0.7rem 2rem;
   border-radius: 0.5rem;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 
   &:hover {
-    --primary: #00356F;
+    --primary: #00356f;
     scale: 1.08;
     translate: 0 -3px;
-    color: #D9F3FF;
+    color: #d9f3ff;
   }
 }
 
+/* COMMON AUDIO FILES SECTION */
+
+.audio__group {
+  margin-block: 3rem;
+
+  h3 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+
+.audio__group ul,
+.audio__list {
+  display: grid;
+  gap: 2.3rem;
+  margin-block: 2rem;
+}
+
+.audio__card {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: var(--secondary);
+  padding: 1.75rem 1rem 2.5rem;
+  border-radius: 0.75rem;
+  margin-inline: auto;
+  width: 90%;
+  text-align: center;
+
+  figcaption {
+    line-height: 1.5194rem;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+  }
+
+  &:hover {
+    background-color: #dee3ed;
+  }
+}
 
 /* FOOTER SECTION */
 
 .main__footer {
   --font-size: 1rem;
 
-  background-color: #EDE18D;
+  background-color: #ede18d;
   padding: 3.75rem 1rem;
   font-family: var(--font-work-sans);
   font-size: var(--font-size);
@@ -225,13 +259,21 @@ a:hover {
   margin-bottom: 1rem;
 }
 
-
-
 .app-download {
+  transition: border 0.2s linear, scale 100ms ease-in-out;
 
   img {
     width: 100%;
     max-width: 12.5rem;
+  }
+
+  &:hover {
+    scale: 1.1;
+
+    img {
+      border: 1.2px solid var(--primary);
+      border-radius: 1.2rem;
+    }
   }
 }
 
@@ -252,7 +294,7 @@ a:hover {
 
     input {
       width: 100%;
-      padding: .8rem;
+      padding: 0.8rem;
       border-radius: 0.5rem;
       border: 1px solid #759aac;
     }
@@ -262,17 +304,13 @@ a:hover {
       border-radius: 0.5rem;
       color: #fff;
       text-transform: uppercase;
-      padding: 1rem .75rem;
+      padding: 1rem 0.75rem;
     }
   }
-
-
 }
 
 .info-wrap {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  display: grid;
   gap: 1rem;
 
   a:hover {
@@ -292,7 +330,7 @@ a:hover {
     font-weight: 600;
     color: #000;
     text-transform: uppercase;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     font-size: 1.1rem;
   }
 }
@@ -322,7 +360,7 @@ a:hover {
 }
 
 .footer__bottom-socials {
-  border-bottom: 1px solid #B7B5B5;
+  border-bottom: 1px solid #b7b5b5;
   padding: 0.5rem;
   width: 100%;
   display: flex;
@@ -335,28 +373,32 @@ a:hover {
 
   a:hover {
     scale: 1.16;
-    transition: scale .2s ease-in-out;
+    transition: scale 0.2s ease-in-out;
   }
 }
 
 .footer__bottom-donate {
-  border-radius: .5rem;
-  padding: .5rem 1rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
   background-color: var(--primary);
   color: #fff;
   text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion:no-preference) {
+@media (prefers-reduced-motion: no-preference) {
   .main-nav {
-    animation: slide-in .5s linear 1;
+    animation: slide-in 0.5s linear 1;
   }
 }
 
 @media (width>47.8125rem) {
   .main-header {
+    padding: 0.25rem 8%;
+  }
 
-    padding: .25rem 8%;
+  .audio__group ul,
+  .audio__list {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .main__footer {
@@ -377,23 +419,22 @@ a:hover {
   }
 
   .info-wrap {
-    flex-direction: row;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (width>=64rem) {
-
   .top-banner {
     display: block;
-    background-color: #F7931E;
+    background-color: #f7931e;
     font-weight: 300;
-    letter-spacing: .0063rem;
+    letter-spacing: 0.0063rem;
     line-height: 1.25rem;
     font-family: var(--font-work-sans);
     font-style: italic;
-    padding: .625rem;
+    padding: 0.625rem;
     text-align: center;
-    color: #FBF6ED;
+    color: #fbf6ed;
   }
 
   .main-header__open-menu,
@@ -407,7 +448,7 @@ a:hover {
     animation: none;
     max-width: none;
     background-color: inherit;
-    color: #00356F;
+    color: #00356f;
     border-radius: 0;
     overflow: visible;
   }
@@ -430,17 +471,17 @@ a:hover {
     justify-content: space-between;
     place-items: center;
     gap: 3rem;
-    padding: 4rem 9rem;
+    padding: 4rem 6rem;
   }
 
   .info-wrap {
-    grid-column: span 3;
+    gap: 2rem;
+    /* grid-column: span 2; */
   }
 
-
   .footer__subscribe {
-    grid-column: span 2;
     width: 100%;
+    grid-column: span 4;
   }
 
   .footer__bottom {
@@ -464,12 +505,14 @@ a:hover {
   }
 
   p {
-    font-size: 1.6rem;
-    line-height: 1.4;
+    font-size: 1.1rem;
+  }
+
+  .audio__group ul,
+  .audio__list {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
-
-
 
 @keyframes slide-in {
   from {
