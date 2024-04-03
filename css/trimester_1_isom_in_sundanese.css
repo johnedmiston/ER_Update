@@ -1,0 +1,68 @@
+h1 {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+}
+
+main {
+  background: linear-gradient(to right, rgb(255, 228, 230), rgb(204, 251, 241));
+}
+
+/**********************************/
+/* HERO SECTION */
+.hero__section {
+  width: 90%;
+  padding-block: 2rem;
+  margin-inline: auto;
+}
+
+/* HERO SECTION ENDS */
+/* *************************************** */
+
+/* TRIMESTER 1 AUDIO FILES */
+
+.trimester {
+  width: 90%;
+  margin-inline: auto;
+  padding-block: 2rem;
+}
+
+.trimester h2,
+.group h3 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.group h3 {
+  margin-bottom: 1.5rem;
+}
+
+.group {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-block: 3rem;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.group ul {
+  display: grid;
+  gap: 2rem;
+}
+
+/* TABLET DESIGN */
+@media (width >= 47.8125rem) {
+  .hero__section,
+  .trimester {
+    width: 85%;
+  }
+
+  .group ul {
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  }
+
+  .audio__card {
+    min-width: 20rem;
+  }
+}
