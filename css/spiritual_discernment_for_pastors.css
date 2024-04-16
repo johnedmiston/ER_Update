@@ -23,16 +23,19 @@
 }
 
 .audio__list {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  column-gap: 2rem;
 }
 
 .audio__card {
-  margin-block: 2rem;
   background-color: #ffffff;
   position: relative;
   overflow: hidden;
   transition: background-color 200ms ease-in;
   width: 100%;
+  max-width: 30rem;
 
   p {
     margin-top: 1rem;
@@ -70,20 +73,16 @@
   }
 
   .files {
-    padding-inline: 6rem;
+    padding-inline: 3rem;
   }
 
-  .audio__card {
-    margin-block: 4rem;
-
-    p {
-      margin-top: 1.5rem;
-    }
+  .audio__list {
+    flex-direction: row;
+    flex-basis: 50%;
+    flex-wrap: wrap;
   }
-}
 
-@media (width >=64rem) {
-  .files {
-    padding-inline: 20%;
+  .audio__card p {
+    margin-top: 1.5rem;
   }
 }

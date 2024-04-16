@@ -47,20 +47,11 @@ h1 {
   }
 }
 
-.files__list {
-  display: grid;
-  gap: 3rem;
-}
-
 /* TABLET DESIGN */
 @media (width >= 47.8125rem) {
   .files,
   .hero__section {
     width: 85%;
-  }
-
-  .files__list {
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   }
 
   .audio__card {

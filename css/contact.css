@@ -3,7 +3,6 @@ textarea::placeholder {
   text-transform: capitalize;
 }
 
-
 main {
   width: 100%;
 }
@@ -31,7 +30,7 @@ main {
   font-family: var(--font-work-sans);
 
   h2 {
-    color: #00356F;
+    color: #00356f;
     font-size: 1.75rem;
     font-weight: 600;
     line-height: 36px;
@@ -41,56 +40,51 @@ main {
 
 .contact-form {
   display: grid;
-  background-color: #FBF6ED;
-  border-radius: .75rem;
-  margin-top: .625rem;
+  background-color: #fbf6ed;
+  border-radius: 0.75rem;
+  margin-top: 1.3rem;
   padding: 1.95rem 1rem;
   gap: 1.5rem;
+  width: 100%;
 
   input,
   textarea {
-    border: 1px solid #00356F;
-    padding: .75rem;
-    border-radius: .5rem;
+    width: 100%;
+    border: 1px solid #00356f;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
   }
-
-
 
   button {
     background-color: var(--primary);
     color: #fff;
-    padding: 1rem .75rem;
+    padding: 1rem 0.75rem;
     text-transform: uppercase;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     margin-top: 1.7rem;
     font-weight: 600;
   }
 }
 
-
 /* TABLET VIEW */
 @media (width>47.8125rem) {
-
   .hero {
     height: 28.25rem;
   }
 
   .contact-form {
     grid-template-columns: repeat(2, 1fr);
-    padding: 3.75rem 5rem;
+    padding: 3.75rem;
 
     textarea,
     button {
       grid-column: span 2;
     }
   }
-
-
 }
 
 /* DESKTOP VIEW */
 @media (width >=64rem) {
-
   .hero {
     background-size: cover;
     height: 80svh;

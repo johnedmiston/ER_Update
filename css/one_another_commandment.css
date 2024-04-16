@@ -1,5 +1,4 @@
 .hero__section {
-  background-color: rgba(236, 227, 174, 0.5);
   min-height: 80svh;
   display: flex;
   flex-direction: column;
@@ -11,7 +10,14 @@
 
   h1 {
     text-transform: uppercase;
-    color: #00356f;
+    color: transparent;
+    background: linear-gradient(
+      to right,
+      rgb(153, 27, 27),
+      rgb(202, 138, 4),
+      rgb(234, 179, 8)
+    );
+    background-clip: text;
     font-size: 1.5rem;
     text-align: center;
     line-height: 1.7;

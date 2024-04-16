@@ -86,7 +86,8 @@
 }
 
 .streaming ul {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
 
   li {
@@ -165,6 +166,7 @@
       font-weight: 700;
       transition: 0.1ms;
       font-size: var(--font-size);
+      text-decoration: underline;
     }
 
     a:hover {
@@ -225,7 +227,11 @@
   }
 
   .streaming ul {
-    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-basis: 50%;
 
     li:last-child {
       grid-column: span 2;

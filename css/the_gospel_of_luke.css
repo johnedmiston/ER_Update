@@ -1,16 +1,30 @@
 .hero__section {
   text-align: center;
   padding: 4rem 1rem;
+  background: radial-gradient(rgba(181, 115, 76, 0.3) 1px, transparent 1px),
+    linear-gradient(
+      to right,
+      rgb(199, 210, 254),
+      rgb(254, 202, 202),
+      rgb(254, 249, 195)
+    );
+  background-size: 12px 12px, cover;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 
   h1 {
     text-transform: uppercase;
     color: #00356f;
     margin-bottom: 3rem;
+    font-weight: 800;
   }
 }
 
 .programs {
-  background-color: var(--off-white);
   padding: 3rem 1.5rem;
 
   h2 {
@@ -18,17 +32,6 @@
     text-transform: capitalize;
     color: var(--accent);
     font-size: 2rem;
-  }
-}
-
-.audio__card {
-  background-color: #fff;
-  border-radius: 2rem 5rem 2rem 5.7rem;
-  padding: 4.5rem 2rem;
-
-  &:hover {
-    background-color: var(--accent);
-    color: #fff;
   }
 }
 

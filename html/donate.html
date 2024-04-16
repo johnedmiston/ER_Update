@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,36 +9,37 @@
   <link rel="stylesheet" href="../css/donate.css">
   <script src="../js/index.js" defer></script>
 </head>
+
 <body>
   <header class="main-header">
     <!-- logo -->
-    <a href="#" class="main-header__logo">
-      <img src="./assets/images/cybermissionsfull_400.jpg" alt="logo" />
+    <a href="../index.html" class="main-header__logo">
+      <img src="../assets/images/cybermissionsfull_400.jpg" alt="logo" />
     </a>
 
-    <button aria-haspopup="true" aria-expanded="false" aria-controls="navigation-menu" id="open-menu"
+    <button type="button" aria-haspopup="true" aria-expanded="false" aria-controls="navigation-menu" id="open-menu"
       class="main-header__open-menu">
-      <img src="./assets/images/bars.svg" alt="open navigation menu" class="open-menu-img" />
+      <img src="../assets/images/bars.svg" alt="open navigation menu" class="open-menu-img" />
 
-      <img src="./assets/images/close.svg" alt="close navigation menu" class="close-menu-img hide">
+      <img src="../assets/images/close.svg" alt="close navigation menu" class="close-menu-img hide">
     </button>
     <div class="overlay hide"></div>
     <nav class="main-nav hidden" id="navigation-menu">
       <ul>
         <li>
-          <a href="#">home</a>
+          <a href="../index.html">home</a>
         </li>
         <li>
-          <a href="#">stream</a>
+          <a href="../index.html#streams">stream</a>
         </li>
         <li>
-          <a href="#">download</a>
+          <a href="../index.html#downloads">download</a>
         </li>
         <li>
-          <a href="./html/contact.html">contact</a>
+          <a href="./contact.html">contact</a>
         </li>
         <li>
-          <a href="./html/donate.html">donate</a>
+          <a href="./donate.html">donate</a>
         </li>
       </ul>
     </nav>
@@ -150,7 +152,8 @@
   <footer class="main__footer">
     <div class="footer__logo">
       <img src="../assets/images/logo-yellow.jpg" alt="logo" class="logo" />
-      <a href="https://play.google.com/store/apps/details?id=com.cybermissions.eternityradioapp" class="app-download">
+      <a href="https://play.google.com/store/apps/details?id=com.cybermissions.eternityradioapp" class="app-download"
+        aria-label="download the app from playstore">
         <img src="../assets/images/google-play-badge.png" alt=""></a>
     </div>
 
@@ -162,7 +165,7 @@
           <li><a href="#">our mission</a></li>
           <li><a href="#">voluteer</a></li>
           <li><a href="./contact.html">support</a></li>
-          <li><a href="#">donate</a></li>
+          <li><a href="./donate.html">donate</a></li>
         </ul>
       </div>
       <div class="menu-second">
@@ -178,7 +181,8 @@
     <div class="footer__subscribe">
       <h5>Subscribe to our Newsletter</h5>
       <form action="post" id="subscribe">
-        <input type="email" name="subscribe-email" id="subscribe-email" placeholder="enter email address" />
+        <input type="email" name="subscribe-email" id="subscribe-email" placeholder="enter email address"
+          aria-label="email" />
         <button type="submit">subscribe</button>
       </form>
     </div>
@@ -199,9 +203,10 @@
         </a>
       </div>
       <div class="footer__bottom-donate">
-        <a href="#" id="donate">donate</a>
+        <a href="./donate.html" id="donate">donate</a>
       </div>
     </div>
   </footer>
 </body>
+
 </html>

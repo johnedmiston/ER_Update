@@ -3,7 +3,7 @@ body {
 }
 
 main {
-  background-color: #FCE5C1;
+  background-color: #fce5c1;
 }
 
 /* HERO SECTION */
@@ -51,7 +51,7 @@ main {
   }
 
   p {
-    font-size: .875rem;
+    font-size: 0.875rem;
     color: #000;
     margin-block: 1.5rem;
   }
@@ -59,7 +59,7 @@ main {
   a {
     color: #fff;
     background-color: var(--primary);
-    padding: .75rem 1.5rem;
+    padding: 0.75rem 1.5rem;
     text-transform: uppercase;
     display: inline-block;
     border-radius: 8px;
@@ -105,7 +105,7 @@ main {
 
   li {
     padding: 6.25rem 1.875rem;
-    background-color: #FBD08F;
+    background-color: #fbd08f;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,12 +125,13 @@ main {
   p {
     font-size: 1.375rem;
     line-height: 1.75rem;
-    color: #6B6B6B;
+    color: #6b6b6b;
   }
 }
 
 .last-section {
   padding: 2.25rem 1rem 4.5rem;
+  overflow: hidden;
 
   h2 {
     color: #252727;
@@ -143,7 +144,8 @@ main {
 
 .last-section ul {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 3rem;
   margin-top: 3rem;
 }
@@ -157,6 +159,7 @@ main {
   flex-direction: column;
   gap: 1.25rem;
   align-items: center;
+  width: 20rem;
 
   img {
     width: 4.3125rem;
@@ -171,9 +174,9 @@ main {
   }
 
   p {
-    color: #6B6B6B;
+    color: #6b6b6b;
     text-align: center;
-    font-size: 1.375rem;
+    font-size: 1.1rem;
     line-height: 1.75rem;
   }
 }
@@ -193,7 +196,6 @@ main {
     color: var(--primary);
   }
 }
-
 
 @media (width>=47.8125rem) {
   .about {
@@ -227,7 +229,6 @@ main {
 /* DESKTOP VIEW */
 
 @media (width>=64rem) {
-
   .hero {
     justify-content: center;
     align-items: center;
@@ -266,29 +267,6 @@ main {
 
   .last-section {
     padding: 4.375rem 7.5rem;
-  }
-
-  .last-section ul {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-  }
-
-  .last-section__card-item {
-    flex-grow: 1;
-    grid-column: span 2;
-
-    &:last-child,
-    &:nth-child(4) {
-      grid-column: span 3;
-    }
-
-    &:nth-child(4) {
-      margin-left: 5rem;
-    }
-
-    &:last-child {
-      margin-right: 5em;
-    }
   }
 
   .prayer {
