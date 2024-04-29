@@ -23,8 +23,7 @@
 }
 
 .audio__list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   row-gap: 3rem;
   column-gap: 2rem;
 }
@@ -77,9 +76,7 @@
   }
 
   .audio__list {
-    flex-direction: row;
-    flex-basis: 50%;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .audio__card p {

@@ -4,8 +4,6 @@ const openMenuBtn = document.querySelector("#open-menu");
 const navigationMenuElement = document.querySelector("#navigation-menu");
 const closeImg = document.querySelector(".close-menu-img");
 const menuImg = document.querySelector(".open-menu-img");
-const overlay = document.querySelector(".overlay");
-const subscribeForm = document.getElementById("subscribe");
 
 /**
  * toggleMobileMenu.
@@ -21,12 +19,4 @@ function toggleMobileMenu() {
   overlay.classList.toggle("hide");
 }
 
-function handleSubscribe(event) {
-  event.preventDefault();
-}
-
 openMenuBtn.addEventListener("click", toggleMobileMenu);
-
-overlay.addEventListener("click", toggleMobileMenu);
-
-subscribeForm.addEventListener("submit", handleSubscribe);

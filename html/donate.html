@@ -51,14 +51,20 @@
         <p>This donations page serves as the donations page for all of our Cybermissions websites such as:
           Cybermissions, Global
           Christians. New Testament Prayer, and Eternity Radio</p>
-        <a
-          href="https://www.paypal.com/donate?token=VbPjpiLBLIjsqYuoYUEAITYJtogj05ovdR2LtpPNZz0x1pVxUebuFqX1KTAsPtJULfHBGrqYJL-9wMJJ">donate</a>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="paypal">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="3L287WRJ936VQ">
+          <!-- <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit"
+            alt="PayPal - The safer, easier way to pay online!" class="paypal-btn"> -->
+          <button type="submit" class="paypal-btn">Donate</button>
+          <!-- <img alt="pay" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" class="" /> -->
+        </form>
       </div>
 
       <div class="hero__image">
         <p>donate</p>
         <picture>
-          <source media="(min-width:765px)and (max-width:1024px)" srcset="../assets/images/worship.jpg">
+          <!-- <source media="(min-width:765px)and (max-width:1024px)" srcset="../assets/images/worship.jpg"> -->
           <img src="../assets/images/coins.jpg" alt="" />
         </picture>
       </div>
@@ -72,15 +78,17 @@
 
     <div class="how-to">
       <figure>
-        <!-- <video src=""></video> -->
-
-        <img src="../assets/images/video1.svg" alt="">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3ahgvJGoimg?si=GT2Dt2HXF7EMKM2D"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <figcaption>How to Donate : (A 3 minutes video)</figcaption>
       </figure>
       <figure>
-        <!-- <video src=""></video> -->
-
-        <img src="../assets/images/video2.svg" alt="">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fpnrO5BzRMA?si=Vy6vHFR990EhgMoY"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <figcaption>Watch the (14 minutes) video that explains our numerous projects.</figcaption>
       </figure>
     </div>
@@ -154,52 +162,45 @@
       <img src="../assets/images/logo-yellow.jpg" alt="logo" class="logo" />
       <a href="https://play.google.com/store/apps/details?id=com.cybermissions.eternityradioapp" class="app-download"
         aria-label="download the app from playstore">
-        <img src="../assets/images/google-play-badge.png" alt=""></a>
+        <img src="../assets/images/google-play-badge.png" alt="" /></a>
     </div>
 
-    <div class="info-wrap">
-      <div class="menu-first">
-        <h5>menu</h5>
-        <ul>
-          <li><a href="#">about</a></li>
-          <li><a href="#">our mission</a></li>
-          <li><a href="#">voluteer</a></li>
-          <li><a href="./contact.html">support</a></li>
-          <li><a href="./donate.html">donate</a></li>
-        </ul>
-      </div>
-      <div class="menu-second">
-        <h5>contact us</h5>
-        <ul>
-          <li><img src="../assets/images/location.svg" alt="">P.O. Box 40 Rhoadesville, VA, 22542 (USA)</li>
-          <li><img src="../assets/images/mail.svg" alt="">johned@cybermissions.org</li>
-          <li><img src="../assets/images/phone.svg" alt="">+1-310-844-6948</li>
-        </ul>
-      </div>
-    </div>
+    <div class="menu-first">
+      <h5>menu</h5>
+      <ul>
+        <li><a href="https://cybermissions.org/contact.html/" target="_blank" rel="noopener">about</a>
+        </li>
+        <li><a href="https://cybermissions.org/" target="_blank" rel="noopener">our
+            mission</a></li>
+        <li><a href="https://cybermissions.org/volunteers.html/" target="_blank" rel="noopener">volunteer</a></li>
 
-    <div class="footer__subscribe">
-      <h5>Subscribe to our Newsletter</h5>
-      <form action="post" id="subscribe">
-        <input type="email" name="subscribe-email" id="subscribe-email" placeholder="enter email address"
-          aria-label="email" />
-        <button type="submit">subscribe</button>
-      </form>
+      </ul>
+    </div>
+    <div class="menu-second">
+      <h5>contact us</h5>
+      <ul>
+        <li>
+          <img src="../assets/images/location.svg" alt="" />P.O. Box 40
+          Rhoadesville, VA, 22542 (USA)
+        </li>
+        <li>
+          <img src="../assets/images/mail.svg" alt="" />johned@cybermissions.org
+        </li>
+        <li>
+          <img src="../assets/images/phone.svg" alt="" />+1-310-844-6948
+        </li>
+      </ul>
     </div>
 
     <div class="footer__bottom">
       <div class="footer__bottom-socials">
-        <a href="#" title="twitter">
-          <img src="../assets/images/twitter.svg" alt="" title="instagram">
-        </a>
-        <a href="#" title="instagram">
-          <img src="../assets/images/instagram.svg" alt="">
-        </a>
-        <a href="#" title="linkedin">
-          <img src="../assets/images/linkedin.svg" alt="">
+
+
+        <a href="https://www.linkedin.com/in/johnedmiston/" title="linkedin" target="_blank" rel="noopener">
+          <img src="../assets/images/linkedin.svg" alt="" />
         </a>
         <a href="mailto:johned@cybermissions.org" title="send email">
-          <img src="../assets/images/email.svg" alt="">
+          <img src="../assets/images/email.svg" alt="" />
         </a>
       </div>
       <div class="footer__bottom-donate">
