@@ -215,9 +215,9 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  column-gap: 0rem;
+  column-gap: 0.3rem;
   margin-block: 2rem;
-  row-gap: 1rem;
+  row-gap: 1.2rem;
   overflow-x: hidden;
 }
 
