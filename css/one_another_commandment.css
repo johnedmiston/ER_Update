@@ -1,25 +1,57 @@
 .hero__section {
-  min-height: 80svh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem 1rem;
   gap: 3rem;
   margin-bottom: 4rem;
 
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50svh;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url("https://source.unsplash.com/sjHDn0oakCc/1200*900");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+
+  p {
+    width: 90%;
+    margin-inline: auto;
+    padding-block: 4rem;
+  }
+
   h1 {
     text-transform: uppercase;
-    color: transparent;
-    background: linear-gradient(
-      to right,
-      rgb(153, 27, 27),
-      rgb(202, 138, 4),
-      rgb(234, 179, 8)
-    );
-    background-clip: text;
+    color: white;
     font-size: 1.5rem;
     text-align: center;
     line-height: 1.7;
+  }
+}
+
+.highlight {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.programs {
+  width: 90%;
+  margin-inline: auto;
+}
+
+@media (min-width: 47.8125rem) {
+  .hero__section p,
+  .programs {
+    width: 80%;
+  }
+
+  .hero__section h1 {
+    font-size: 2.5rem;
+    padding-inline: 2rem;
   }
 }

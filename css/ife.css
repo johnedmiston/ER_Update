@@ -1,24 +1,24 @@
 .hero__section {
   padding: 4rem 1rem;
   text-align: center;
-  background: radial-gradient(rgba(181, 115, 76, 0.3) 1px, transparent 1px),
-    linear-gradient(
-      to right,
-      rgb(199, 210, 254),
-      rgb(254, 202, 202),
-      rgb(254, 249, 195)
-    );
-  background-size: 12px 12px, cover;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("https://source.unsplash.com/cmIqkMPfpMQ/1200*900");
+  background-size: cover;
   min-height: 70vh;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  color: white;
 
   h1 {
     text-transform: uppercase;
-    color: #00356f;
     font-size: 1.5rem;
   }
 }

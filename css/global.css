@@ -215,9 +215,9 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  column-gap: 0.3rem;
+  column-gap: 0.5rem;
   margin-block: 2rem;
-  row-gap: 1.2rem;
+  row-gap: 2rem;
   overflow-x: hidden;
 }
 
@@ -227,7 +227,7 @@ a:hover {
   padding: 0.3rem 0.5rem;
   border-radius: 0.75rem;
   margin-inline: auto;
-  width: 15rem;
+  width: 100%;
   text-align: center;
 
   figcaption {
@@ -363,6 +363,10 @@ a:hover {
   text-transform: uppercase;
 }
 
+p {
+  line-height: 1.6;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .main-nav {
     animation: slide-in 0.5s linear 1;
@@ -406,6 +410,10 @@ a:hover {
   .footer__bottom {
     grid-column: span 2;
     width: 100%;
+  }
+
+  .audio__card {
+    max-width: 15rem;
   }
 }
 
