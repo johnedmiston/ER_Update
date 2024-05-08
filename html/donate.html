@@ -18,13 +18,17 @@
     </a>
 
     <button type="button" aria-haspopup="true" aria-expanded="false" aria-controls="navigation-menu" id="open-menu"
-      class="main-header__open-menu">
-      <img src="../assets/images/bars.svg" alt="open navigation menu" class="open-menu-img" />
-
-      <img src="../assets/images/close.svg" alt="close navigation menu" class="close-menu-img hide">
+      aria-label="toggle navigation menu" class="main-header__open-menu">
+      <svg fill="var(--primary)" class="hamburger" viewBox="0 0 100 100" width="100">
+        <rect class="line top" width="80" height="10" x="10" y="25" rx="5">
+        </rect>
+        <rect class="line middle" width="80" height="10" x="10" y="45" rx="5">
+        </rect>
+        <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5">
+        </rect>
+      </svg>
     </button>
-    <div class="overlay hide"></div>
-    <nav class="main-nav hidden" id="navigation-menu">
+    <nav class="main-nav" id="navigation-menu">
       <ul>
         <li>
           <a href="../index.html">home</a>
@@ -43,6 +47,10 @@
         </li>
       </ul>
     </nav>
+
+    <nav class="donate__nav">
+      <a href="./donate.html">donate</a>
+    </nav>
   </header>
   <main>
     <section aria-label="hero" class="hero">
@@ -54,17 +62,13 @@
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="paypal">
           <input type="hidden" name="cmd" value="_s-xclick">
           <input type="hidden" name="hosted_button_id" value="3L287WRJ936VQ">
-          <!-- <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit"
-            alt="PayPal - The safer, easier way to pay online!" class="paypal-btn"> -->
           <button type="submit" class="paypal-btn">Donate</button>
-          <!-- <img alt="pay" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" class="" /> -->
         </form>
       </div>
 
       <div class="hero__image">
         <p>donate</p>
         <picture>
-          <!-- <source media="(min-width:765px)and (max-width:1024px)" srcset="../assets/images/worship.jpg"> -->
           <img src="../assets/images/coins.jpg" alt="" />
         </picture>
       </div>

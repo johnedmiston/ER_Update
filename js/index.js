@@ -1,9 +1,6 @@
 "use strict";
 
 const openMenuBtn = document.querySelector("#open-menu");
-const navigationMenuElement = document.querySelector("#navigation-menu");
-const closeImg = document.querySelector(".close-menu-img");
-const menuImg = document.querySelector(".open-menu-img");
 
 /**
  * toggleMobileMenu.
@@ -13,10 +10,15 @@ const menuImg = document.querySelector(".open-menu-img");
  *
  */
 function toggleMobileMenu() {
-  navigationMenuElement.classList.toggle("hidden");
-  closeImg.classList.toggle("hide");
-  menuImg.classList.toggle("hide");
-  overlay.classList.toggle("hide");
+  const state = openMenuBtn.getAttribute("data-state");
+
+  if (!state || state === "closed") {
+    openMenuBtn.setAttribute("data-state", "opened");
+    openMenuBtn.setAttribute("aria-expanded", "true");
+  } else {
+    openMenuBtn.setAttribute("data-state", "closed");
+    openMenuBtn.setAttribute("aria-expanded", "false");
+  }
 }
 
 openMenuBtn.addEventListener("click", toggleMobileMenu);
