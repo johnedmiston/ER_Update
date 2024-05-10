@@ -1,0 +1,65 @@
+.hero {
+  min-height: 65vh;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    url("https://source.unsplash.com/LFdLnnzvJw4/1200*900");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-inline: 1rem;
+
+  p {
+    text-align: center;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.resources ul {
+  --font-size: 1.2rem;
+
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  li {
+    padding-block: 1rem;
+    text-align: center;
+
+    a {
+      text-transform: capitalize;
+      font-weight: 700;
+      transition: 0.1ms;
+      font-size: var(--font-size);
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: #357ae8;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (min-width: 765px) {
+  .hero p {
+    padding-inline: 4rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}

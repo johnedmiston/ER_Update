@@ -1,0 +1,106 @@
+.files {
+  background-color: var(--off-white);
+  padding: 5rem 1.2rem;
+}
+
+.hero__section {
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: white;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url(../assets/images/priscilla.webp);
+    background-size: cover;
+    min-height: 70vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.hero__group {
+  width: 90%;
+  margin-inline: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-block: 4rem;
+}
+
+.audio__list {
+  display: grid;
+  row-gap: 3rem;
+  column-gap: 2rem;
+  width: 90%;
+  margin-inline: auto;
+}
+
+.audio__card {
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 200ms ease-in;
+  width: 100%;
+  max-width: 30rem;
+
+  p {
+    margin-top: 1rem;
+  }
+}
+
+.audio__card::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #f7931e;
+  width: 0.5rem;
+  height: 60%;
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 2rem;
+  transition: background-color 200ms linear;
+}
+
+.audio__card:hover {
+  background-color: rgba(236, 227, 174, 0.7);
+}
+
+.audio__card:hover::before {
+  background-color: rgba(67, 224, 67, 0.8);
+}
+
+@media (width>= 47.8125rem) {
+  .hero__group {
+    flex-direction: row;
+    width: 80%;
+  }
+
+  .files {
+    padding-inline: 3rem;
+  }
+
+  .audio__list {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+  }
+
+  .audio__card p {
+    margin-top: 1.5rem;
+  }
+
+  .hero__section h1 {
+    font-size: 2.3rem;
+    padding-inline: 1rem;
+  }
+}

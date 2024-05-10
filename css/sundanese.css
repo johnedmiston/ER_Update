@@ -1,0 +1,103 @@
+@import url(/css/global.css);
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.hero__section {
+  padding: 4rem 1rem;
+  background-color: rgba(240, 240, 240, 0.5);
+
+  h1 {
+    text-transform: uppercase;
+    line-height: 1.7;
+  }
+
+  h2 {
+    font-size: 1.35rem;
+    margin-block: 1.3rem;
+    color: var(--accent);
+  }
+
+  p {
+    text-align: center;
+    line-height: 1.7;
+  }
+
+  .hero__image {
+    text-align: center;
+    overflow: hidden;
+  }
+}
+
+/* HOW TO USE THESE FILES SECTION */
+.how__to {
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, rgb(255, 228, 230), rgb(204, 251, 241));
+
+  p {
+    max-width: 35rem;
+    margin-inline: auto;
+  }
+}
+
+/* DOWNLOADS */
+
+.downloads {
+  display: grid;
+  padding: 3rem 1rem;
+
+  header {
+    text-align: center;
+  }
+}
+
+.downloads__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+
+  h3 {
+    text-align: left;
+    color: rgb(251, 113, 133);
+    margin-bottom: 1rem;
+    letter-spacing: 0.1em;
+    font-size: 1.3rem;
+
+    a {
+      text-decoration: underline;
+      transition: color 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+      &:hover {
+        color: blueviolet;
+      }
+    }
+  }
+
+  ul {
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+/* TABLET MEDIA QUERIES */
+@media (width>= 47.8125rem) {
+  .hero__section {
+    padding: 7rem 4rem;
+  }
+
+  .downloads {
+    grid-template-columns: 1fr 2fr;
+    padding: 5rem 3rem;
+  }
+}
+
+/* DESKTOP */
+
+@media (width >=64rem) {
+}

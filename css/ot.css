@@ -1,0 +1,84 @@
+.main__section-header {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(../assets/images/milin-john-h_ER0yTX7aQ-unsplash.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 30vh;
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-inline: 2rem;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  background: linear-gradient(
+    to right,
+    rgb(254, 240, 138),
+    rgb(250, 204, 21),
+    rgb(161, 98, 7)
+  );
+  background-clip: text;
+  color: transparent;
+  font-size: 1.5rem;
+  text-wrap: balance;
+}
+
+.hero__section {
+  width: 90%;
+  margin-inline: auto;
+  text-align: center;
+  padding-block: 3rem;
+
+  h2 {
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    text-decoration: underline;
+    color: blue;
+  }
+}
+
+/* FILES SECTION */
+
+.files {
+  width: 90%;
+  margin-inline: auto;
+  padding: 2rem;
+
+  h3 {
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+/* TABLET DESIGN */
+@media (width >= 47.8125rem) {
+  .files,
+  .hero__section {
+    width: 85%;
+  }
+
+  .audio__card {
+    min-width: 20rem;
+  }
+
+  .main__section-header {
+    min-height: 60vh;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+}

@@ -1,0 +1,94 @@
+.hero__section {
+  padding: 4rem 1rem;
+  text-align: center;
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(../assets/images/milin-john-h_ER0yTX7aQ-unsplash.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+  h1 {
+    text-transform: uppercase;
+    background: conic-gradient(
+      at center bottom,
+      rgb(255, 255, 255),
+      rgb(14, 165, 233),
+      rgb(14, 165, 233)
+    );
+    background-clip: text;
+    color: transparent;
+    font-size: 1.8rem;
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 0.5rem;
+  }
+}
+
+.about {
+  background-color: blanchedalmond;
+  padding: 6rem 1rem;
+  text-align: center;
+
+  p {
+    font-size: 1.09rem;
+    line-height: 1.6;
+  }
+}
+
+.programs {
+  margin-block: 3rem;
+  padding: 3rem 1rem;
+
+  h2 {
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+@media (width>= 47.8125rem) {
+  .about {
+    padding-inline: 6rem;
+    p {
+      line-height: 1.6;
+    }
+  }
+
+  .hero__section {
+    padding-inline: 3rem;
+  }
+
+  .programs {
+    width: 90%;
+    margin-inline: auto;
+  }
+}
+
+@media (width >=64rem) {
+  .about {
+    padding-inline: 8rem;
+  }
+
+  .programs {
+    width: 80%;
+  }
+}

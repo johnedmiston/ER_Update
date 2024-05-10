@@ -1,0 +1,73 @@
+.hero__section {
+  padding: 4rem 1rem;
+  text-align: center;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("https://source.unsplash.com/cmIqkMPfpMQ/1200*900");
+  background-size: cover;
+  min-height: 70vh;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+}
+
+.about {
+  background-color: blanchedalmond;
+  padding: 6rem 1rem;
+  text-align: center;
+
+  p {
+    font-size: 1.09rem;
+    line-height: 1.6;
+  }
+}
+
+.programs {
+  margin-block: 3rem;
+
+  h2 {
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+@media (width>= 47.8125rem) {
+  .about {
+    padding-inline: 6rem;
+  }
+
+  .hero__section {
+    padding-inline: 3rem;
+  }
+
+  .programs {
+    width: 90%;
+    margin-inline: auto;
+  }
+}
+
+@media (width >=64rem) {
+  .about {
+    padding-inline: 8rem;
+  }
+
+  .programs {
+    width: 80%;
+  }
+}
