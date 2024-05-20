@@ -408,7 +408,7 @@ p {
 
 @media (width>=47.8125rem) {
   .main-header {
-    padding: 0.25rem 8%;
+    padding: 1rem 8%;
   }
 
   .audio__group ul,
@@ -453,10 +453,6 @@ p {
 @media (width>=64rem) {
   #open-menu {
     display: none;
-  }
-
-  .main-header {
-    padding-block: 2rem;
   }
 
   .main-nav {

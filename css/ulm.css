@@ -51,6 +51,32 @@
   }
 }
 
+.current-series {
+  margin-top: 2.5rem;
+
+  h3 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      color: var(--primary);
+    }
+  }
+}
+
+.beq {
+  padding: 2rem 1.5rem;
+  h2 {
+    text-align: center;
+  }
+}
+
 .programs {
   margin-block: 3rem;
   padding: 3rem 1rem;
@@ -80,6 +106,10 @@
   .programs {
     width: 90%;
     margin-inline: auto;
+  }
+
+  .beq {
+    padding-inline: 8%;
   }
 }
 
