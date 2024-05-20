@@ -90,7 +90,7 @@ button:hover {
 }
 
 a:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .hide {
@@ -370,7 +370,8 @@ a {
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 1.1rem;
+  gap: 0.7rem;
+  align-items: center;
 
   img {
     width: 2rem;
