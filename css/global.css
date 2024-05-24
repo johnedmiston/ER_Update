@@ -266,7 +266,14 @@ a {
   }
 
   &:hover {
-    background-color: #dee3ed;
+    background-color: #f0eee9;
+  }
+}
+
+.download-instructions {
+  margin-block: 2rem;
+  p {
+    text-align: center;
   }
 }
 
