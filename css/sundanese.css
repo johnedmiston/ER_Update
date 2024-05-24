@@ -48,6 +48,7 @@ h3 {
 
 .downloads {
   display: grid;
+  place-items: center;
   padding: 3rem 1rem;
 
   header {
@@ -92,12 +93,6 @@ h3 {
   }
 
   .downloads {
-    grid-template-columns: 1fr 2fr;
     padding: 5rem 3rem;
   }
-}
-
-/* DESKTOP */
-
-@media (width >=64rem) {
 }
