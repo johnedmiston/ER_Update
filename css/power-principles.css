@@ -59,6 +59,11 @@ h1 {
     text-align: left;
   }
 
+  li > ul {
+    margin-left: 2rem;
+    margin-block: 1rem;
+  }
+
   li {
     margin-bottom: 0.7rem;
   }
