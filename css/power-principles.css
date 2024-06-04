@@ -54,6 +54,14 @@ h1 {
     text-decoration: underline;
     color: blue;
   }
+
+  .list {
+    text-align: left;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
 }
 
 /* FILES SECTION */
@@ -87,5 +95,10 @@ h1 {
 
   .main__section-header h2 {
     font-size: 2.3rem;
+  }
+
+  .objectives > .list {
+    width: 60%;
+    margin-inline: auto;
   }
 }
