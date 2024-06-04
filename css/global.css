@@ -133,6 +133,7 @@ a:hover {
 
   img {
     object-fit: contain;
+    mix-blend-mode: multiply;
   }
 }
 
